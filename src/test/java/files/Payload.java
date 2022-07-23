@@ -1,7 +1,7 @@
 package files;
 
 public class Payload {
-    public static String addPlace(){
+    public static String addPlace() {
         return "{\n" +
                 "  \"location\": {\n" +
                 "    \"lat\": -38.383494,\n" +
@@ -17,6 +17,14 @@ public class Payload {
                 "  ],\n" +
                 "  \"website\": \"http://testing.com\",\n" +
                 "  \"language\": \"French-IN\"\n" +
+                "}";
+    }
+
+    public static String updatePlace(String placeId, String newAddress) {
+        return "{\n" +
+                "    \"place_id\":\"" + placeId + "\",\n" +
+                "    \"address\":\"" + newAddress + "\",\n" +
+                "    \"key\":\"qaclick123\"\n" +
                 "}";
     }
 }
