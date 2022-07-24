@@ -27,4 +27,50 @@ public class Payload {
                 "    \"key\":\"qaclick123\"\n" +
                 "}";
     }
+
+    public static String coursePrice() {
+        return "{\n" +
+                "  \"dashboard\": {\n" +
+                "    \"purchaseAmount\": 2182,\n" +
+                "    \"website\": \"studywholenight.com\"\n" +
+                "  },\n" +
+                "  \"courses\": [\n" +
+                "    {\n" +
+                "      \"title\": \"Selenium Python\",\n" +
+                "      \"price\": 50,\n" +
+                "      \"copies\": 6\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"Cypress\",\n" +
+                "      \"price\": 40,\n" +
+                "      \"copies\": 4\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"RPA\",\n" +
+                "      \"price\": 45,\n" +
+                "      \"copies\": 10\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"SQL\",\n" +
+                "      \"price\": 18,\n" +
+                "      \"copies\": 14\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"Cucumber BDD\",\n" +
+                "      \"price\": 45,\n" +
+                "      \"copies\": 10\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"JAVA Advance\",\n" +
+                "      \"price\": 35,\n" +
+                "      \"copies\": 10\n" +
+                "    },\n" +
+                "    {\n" +
+                "      \"title\": \"Python\",\n" +
+                "      \"price\": 22,\n" +
+                "      \"copies\": 10\n" +
+                "    }\n" +
+                "  ]\n" +
+                "}";
+    }
 }
