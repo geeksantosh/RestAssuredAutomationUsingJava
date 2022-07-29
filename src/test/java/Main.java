@@ -21,7 +21,7 @@ public class Main {
         //Then - Validate the response
         RestAssured.baseURI = "https://rahulshettyacademy.com";
         String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
-                .body(new String(Files.readAllBytes(Paths.get("C:\\Users\\ACER\\IdeaProjects\\RestAssuredAutomationUsingJava\\src\\test\\java\\JsonFiles\\addPlace.json"))))
+                .body(new String(Files.readAllBytes(Paths.get("..\\RestAssuredAutomationUsingJava\\src\\test\\java\\JsonFiles\\addPlace.json"))))
                 .when().when().post("/maps/api/place/add/json")
                 .then().assertThat().statusCode(200).body("scope", equalTo("APP"))
                 .header("server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
